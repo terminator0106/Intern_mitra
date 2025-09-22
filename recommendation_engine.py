@@ -133,9 +133,9 @@ app = FastAPI(title="PM Internship Recommendation Engine", version="1.0.0")
 # Add CORS middleware to allow frontend connections
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173", "http://localhost:3000"],  # Vite dev server ports
+    allow_origins=["*"],  # Allow all origins for development
     allow_credentials=True,
-    allow_methods=["*"],
+    allow_methods=["GET", "POST", "OPTIONS"],  # Explicitly allow OPTIONS
     allow_headers=["*"],
 )
 
@@ -147,11 +147,15 @@ class Candidate(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "PM Internship Recommendation Engine API", "version": "1.0.0"}
+    return {"message": "PM Internship Recommendation Engine API", "version": "1.0.0", "status": "running"}
 
 @app.get("/health")
 def health_check():
-    return {"status": "healthy", "total_internships": len(internships)}
+    return {"status": "healthy", "total_internships": len(internships), "cors_enabled": True}
+
+@app.options("/recommend")
+def recommend_options():
+    return {"message": "CORS preflight"}
 
 @app.post("/recommend")
 def recommend(candidate: Candidate):

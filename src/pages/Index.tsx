@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HeroSection } from "@/components/HeroSectionNew";
 import { ProfileForm } from "@/components/ProfileFormNew";
-import { RecommendationResults } from "@/components/RecommendationResultsNew";
+import { RecommendationResults } from "@/components/RecommendationResultsAPI";
 import { LanguageToggle } from "@/components/LanguageToggle";
 import { HelpChatbot } from "@/components/HelpChatbotNew";
 import { Navbar } from "@/components/Navbar";

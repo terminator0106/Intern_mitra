@@ -20,8 +20,7 @@ import {
     Award,
     IndianRupee,
     GraduationCap,
-    Loader2,
-    AlertCircle
+    Loader2
 } from "lucide-react";
 
 interface FormData {
@@ -38,76 +37,53 @@ interface RecommendationResultsProps {
     onStartOver: () => void;
 }
 
-// Enhanced mock internship data for fallback
-const mockInternships: Recommendation[] = [
-    {
-        id: 1,
-        title: "Software Development Intern",
-        location: "Bangalore, Karnataka",
-        sector: "Information Technology",
-        skills_required: "React, Node.js, JavaScript",
-        eligibility: "BCA, B.Tech",
-        score: 0.95,
-        relevance: "High",
-        reason: "Skills match; Sector aligns"
-    },
-    {
-        id: 2,
-        title: "Digital Marketing Intern",
-        location: "Mumbai, Maharashtra",
-        sector: "Marketing",
-        skills_required: "Social Media, Content Writing, Analytics",
-        eligibility: "MBA, BBA",
-        score: 0.88,
-        relevance: "High",
-        reason: "Partial skills match; Sector aligns"
-    },
-    {
-        id: 3,
-        title: "Data Science Intern",
-        location: "Hyderabad, Telangana",
-        sector: "Data Science",
-        skills_required: "Python, Machine Learning, SQL",
-        eligibility: "B.Tech, M.Tech",
-        score: 0.82,
-        relevance: "Medium",
-        reason: "Skills match; Education matches"
-    },
-    {
-        id: 4,
-        title: "UI/UX Design Intern",
-        location: "Delhi, NCR",
-        sector: "Design",
-        skills_required: "Figma, Adobe XD, User Research",
-        eligibility: "BDes, BA",
-        score: 0.79,
-        relevance: "Medium",
-        reason: "Partial skills match"
-    },
-    {
-        id: 5,
-        title: "Content Writing Intern",
-        location: "Remote",
-        sector: "Content",
-        skills_required: "Writing, SEO, Content Strategy",
-        eligibility: "BA, MA",
-        score: 0.76,
-        relevance: "Low",
-        reason: "Recommended based on overall similarity"
-    }
-];
-
 export const RecommendationResults = ({ userData, onBack, onStartOver }: RecommendationResultsProps) => {
-    const [recommendations, setRecommendations] = useState(mockInternships);
+    const [recommendations, setRecommendations] = useState<any[]>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState<string | null>(null);
+    const [usingApiData, setUsingApiData] = useState(false);
     const { toast } = useToast();
+
+    // Mock fallback data
+    const mockInternships = [
+        {
+            id: 1,
+            title: "Software Development Intern",
+            sector: "Information Technology",
+            location: "Bangalore, Karnataka", 
+            skills_required: "React, Node.js, JavaScript",
+            eligibility: "BCA, B.Tech",
+            score: 0.95,
+            relevance: "High",
+            reason: "Skills match perfectly with your profile"
+        },
+        {
+            id: 2,
+            title: "Digital Marketing Intern",
+            sector: "Marketing",
+            location: "Mumbai, Maharashtra",
+            skills_required: "Social Media, Content Writing",
+            eligibility: "MBA, BBA", 
+            score: 0.88,
+            relevance: "High",
+            reason: "Great match for your interests"
+        },
+        {
+            id: 3,
+            title: "Data Science Intern", 
+            sector: "Analytics",
+            location: "Hyderabad, Telangana",
+            skills_required: "Python, Machine Learning",
+            eligibility: "B.Tech, M.Tech",
+            score: 0.82,
+            relevance: "Medium", 
+            reason: "Good technical fit"
+        }
+    ];
 
     useEffect(() => {
         const fetchRecommendations = async () => {
             try {
                 setLoading(true);
-                setError(null);
 
                 // Transform form data to API format
                 const apiData = {
@@ -129,9 +105,10 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                     const data = await response.json();
                     if (data.status === 'success' && data.recommendations) {
                         setRecommendations(data.recommendations);
+                        setUsingApiData(true);
                         toast({
-                            title: "✅ Real Recommendations Loaded!",
-                            description: `Found ${data.total_found} personalized matches from your dataset.`,
+                            title: "🎯 Real Recommendations Loaded!",
+                            description: `Found ${data.total_found} matches from your CSV dataset.`,
                         });
                     } else {
                         throw new Error('Invalid API response');
@@ -140,20 +117,21 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                     throw new Error(`API Error: ${response.status}`);
                 }
             } catch (err) {
-                setError(err instanceof Error ? err.message : 'Failed to load recommendations');
+                console.error('API Error:', err);
+                setRecommendations(mockInternships);
+                setUsingApiData(false);
                 toast({
                     title: "⚠️ Using Sample Data",
-                    description: "Couldn't connect to recommendation API. Showing mock data instead.",
+                    description: "Couldn't connect to your recommendation API. Make sure it's running on port 8000.",
                     variant: "destructive",
                 });
-                // Keep using mock data as fallback
             } finally {
                 setLoading(false);
             }
         };
 
-        // Add a small delay to show loading state
-        setTimeout(fetchRecommendations, 1000);
+        // Add delay to show loading
+        setTimeout(fetchRecommendations, 1500);
     }, [userData, toast]);
 
     if (loading) {
@@ -161,12 +139,13 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
             <div className="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 pt-24 pb-16 px-4 flex items-center justify-center">
                 <div className="text-center">
                     <Loader2 className="w-12 h-12 animate-spin text-sky-600 mx-auto mb-4" />
-                    <h2 className="text-2xl font-semibold text-slate-800 mb-2">🔍 Finding Your Perfect Matches</h2>
-                    <p className="text-slate-600">Analyzing your profile with our AI recommendation engine...</p>
+                    <h2 className="text-2xl font-semibold text-slate-800 mb-2">Finding Your Perfect Matches</h2>
+                    <p className="text-slate-600">Analyzing {userData.name}'s profile with AI...</p>
                 </div>
             </div>
         );
     }
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 pt-24 pb-16 px-4">
             <div className="container mx-auto max-w-7xl">
@@ -204,7 +183,9 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-md rounded-full px-6 py-3 mb-6 border border-white/30 shadow-lg"
                         >
                             <Target className="w-4 h-4 text-green-600" />
-                            <span className="text-slate-700 text-sm font-medium">Personalized for You</span>
+                            <span className="text-slate-700 text-sm font-medium">
+                                {usingApiData ? "🔥 Live Data from Your CSV" : "📝 Sample Data"}
+                            </span>
                         </motion.div>
 
                         <motion.h1
@@ -213,9 +194,9 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             transition={{ delay: 0.3, duration: 0.6 }}
                             className="text-3xl md:text-5xl font-bold text-slate-800 mb-4"
                         >
-                            Your Perfect{" "}
+                            Perfect Matches for{" "}
                             <span className="bg-gradient-to-r from-sky-600 to-blue-600 bg-clip-text text-transparent">
-                                Matches
+                                {userData.name}
                             </span>
                         </motion.h1>
 
@@ -225,7 +206,10 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             transition={{ delay: 0.4, duration: 0.6 }}
                             className="text-lg text-slate-600 max-w-2xl mx-auto"
                         >
-                            We found {mockInternships.length} amazing internship opportunities tailored to your profile and interests
+                            {usingApiData 
+                                ? `AI analyzed your profile and found ${recommendations.length} personalized internship matches from your dataset`
+                                : `Showing ${recommendations.length} sample internship opportunities (connect your API for real data)`
+                            }
                         </motion.p>
                     </div>
                 </motion.div>
@@ -242,11 +226,11 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             <Card className="group bg-white/80 backdrop-blur-md border border-white/40 shadow-lg hover:shadow-2xl transition-all duration-300 rounded-2xl overflow-hidden h-full hover:-translate-y-1">
                                 <CardHeader className="pb-4">
                                     <div className="flex items-start justify-between">
-                                        <div className="flex items-center gap-3">
+                                        <div className="flex items-center gap-3 flex-1">
                                             <div className="w-14 h-14 bg-gradient-to-br from-sky-100 to-blue-100 rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                                                {internship.logo}
+                                                💼
                                             </div>
-                                            <div>
+                                            <div className="flex-1">
                                                 <CardTitle className="text-lg font-semibold text-slate-800 group-hover:text-sky-700 transition-colors">
                                                     {internship.title}
                                                 </CardTitle>
@@ -272,7 +256,7 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                                                     'bg-amber-100 text-amber-700'
                                                 }`}
                                             >
-                                                {Math.round((internship.score || 0) * 100)}% Match
+                                                {Math.round((internship.score || 0.8) * 100)}% Match
                                             </Badge>
                                         </div>
                                     </div>
@@ -280,7 +264,7 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
 
                                 <CardContent className="pt-0 flex-1 flex flex-col">
                                     <p className="text-slate-600 text-sm mb-4 line-clamp-2 flex-1">
-                                        {internship.description}
+                                        {internship.reason || "Recommended based on your profile"}
                                     </p>
 
                                     {/* Key Info */}
@@ -291,38 +275,31 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                                         </div>
 
                                         <div className="flex items-center gap-2 text-sm text-slate-600">
-                                            <IndianRupee className="w-4 h-4 text-green-500" />
-                                            <span className="font-medium text-green-700">{internship.stipend}</span>
+                                            <GraduationCap className="w-4 h-4 text-green-500" />
+                                            <span className="font-medium text-green-700">{internship.eligibility}</span>
                                             <Badge variant="outline" className="text-xs ml-2">
-                                                {internship.type}
+                                                {internship.relevance || "Medium"} Match
                                             </Badge>
-                                        </div>
-
-                                        <div className="flex items-center gap-2 text-sm text-slate-600">
-                                            <Calendar className="w-4 h-4 text-slate-400" />
-                                            <span>{internship.duration}</span>
-                                            <Clock className="w-4 h-4 text-slate-400 ml-2" />
-                                            <span>{internship.level}</span>
                                         </div>
 
                                         <div className="flex items-center gap-2 text-sm">
                                             <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                                            <span className="text-slate-700 font-medium">{internship.rating}</span>
+                                            <span className="text-slate-700 font-medium">{((internship.score || 0.8) * 5).toFixed(1)}</span>
                                             <span className="text-slate-500">•</span>
                                             <Users className="w-4 h-4 text-slate-400" />
-                                            <span className="text-slate-600">{internship.applicants} applied</span>
+                                            <span className="text-slate-600">AI Score</span>
                                         </div>
                                     </div>
 
                                     {/* Skills Tags */}
                                     <div className="flex flex-wrap gap-2 mb-6">
-                                        {internship.skills.slice(0, 3).map((skill) => (
+                                        {(internship.skills_required || "General Skills").split(',').slice(0, 3).map((skill: string, idx: number) => (
                                             <Badge
-                                                key={skill}
+                                                key={idx}
                                                 variant="secondary"
                                                 className="text-xs bg-sky-100 text-sky-700 hover:bg-sky-200"
                                             >
-                                                {skill}
+                                                {skill.trim()}
                                             </Badge>
                                         ))}
                                     </div>
@@ -358,9 +335,14 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                     className="text-center"
                 >
                     <div className="bg-white/70 backdrop-blur-md border border-white/30 shadow-lg rounded-2xl p-8 max-w-2xl mx-auto">
-                        <h3 className="text-xl font-semibold text-slate-800 mb-2">Want More Options?</h3>
+                        <h3 className="text-xl font-semibold text-slate-800 mb-2">
+                            {usingApiData ? "🎯 These are real recommendations!" : "🔧 Connect Your API"}
+                        </h3>
                         <p className="text-slate-600 mb-6">
-                            Refine your profile or explore different sectors to discover even more opportunities
+                            {usingApiData 
+                                ? "Powered by your CSV data and AI matching algorithm"
+                                : "Start your FastAPI server (python recommendation_engine.py) to see real recommendations"
+                            }
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -375,9 +357,10 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             <Button
                                 variant="outline"
                                 className="bg-white/60 hover:bg-white/80 border-white/40 text-slate-700 rounded-xl px-8 backdrop-blur-sm"
+                                onClick={() => window.location.reload()}
                             >
                                 <TrendingUp className="w-4 h-4 mr-2" />
-                                Explore All Sectors
+                                Refresh Results
                             </Button>
                         </div>
                     </div>
