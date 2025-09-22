@@ -1,0 +1,401 @@
+id,name,skills,education,interests,location
+1,Pooja,"scrum, agile",BSc IT,"Web Dev, Design",Bangalore
+2,Mona,"sql, database",MBA,"Web Dev, Design",Bangalore
+3,Amit,"statistics, data analysis, python",BCA,"Sales, Consulting",Noida
+4,Sakshi,"accounting, excel, finance",BA English,"Coding, CP",Noida
+5,Kabir,"photoshop, illustrator, graphic design",BA English,"Cloud, Big Data",Bangalore
+6,Ankit,"negotiation, sales, public speaking",B.Tech CSE,"Finance, Markets",Noida
+7,Mona,"social media, content",BSc IT,"Cloud, Big Data",Pune
+8,Pooja,"c++, data structures",BCom,"Finance, Markets",Ahmedabad
+9,Sakshi,"finance, excel, accounting",BBA,"AI, Analytics",Hyderabad
+10,Ritu,"accounting, finance, excel",M.Tech,"Cloud, Big Data",Mumbai
+11,Arjun,"cloud, database, sql",BCom,"Cloud, Big Data",Mumbai
+12,Simran,"seo, content, social media",BSc IT,"Sales, Consulting",Delhi
+13,Neha,"seo, social media",BA English,"Database, Security",Chennai
+14,Mona,"statistics, data analysis",BDes,"Design, Branding",Mumbai
+15,Arjun,"statistics, python",BSc Maths,"Database, Security",Bangalore
+16,Meera,"scrum, agile",BCom,"Sales, Consulting",Noida
+17,Kabir,"content, social media",BA English,"Mgmt, Leadership",Chennai
+18,Arjun,"sales, public speaking, negotiation",BBA,"Database, Security",Hyderabad
+19,Rahul,"algorithms, c++, data structures",BCA,"Design, Branding",Pune
+20,Ankit,"algorithms, c++",B.Tech CSE,"Cloud, Big Data",Ahmedabad
+21,Pooja,"seo, content, social media",BCom,"AI, Analytics",Bangalore
+22,Mona,"agile, scrum",M.Tech,"Web Dev, Design",Delhi
+23,Priya,"negotiation, public speaking",BCom,"AI, Analytics",Chennai
+24,Rohan,"data structures, c++, algorithms",BSc IT,"Coding, CP",Pune
+25,Priya,"agile, project management",BSc IT,"Cloud, Big Data",Hyderabad
+26,Meera,"negotiation, sales",BCA,"Cloud, Big Data",Noida
+27,Sneha,"finance, excel, accounting",BSc IT,"Web Dev, Design",Kolkata
+28,Ankit,"illustrator, photoshop, graphic design",BBA,"Database, Security",Bangalore
+29,Kabir,"graphic design, photoshop, illustrator",BCA,"Mgmt, Leadership",Kolkata
+30,Kabir,"cloud, sql, database",BDes,"Sales, Consulting",Ahmedabad
+31,Arjun,"java, spring",M.Tech,"Mgmt, Leadership",Mumbai
+32,Ritu,"public speaking, negotiation, sales",BSc Maths,"Database, Security",Kolkata
+33,Rohan,"react, css, javascript",B.Tech CSE,"Sales, Consulting",Jaipur
+34,Ankit,"accounting, finance, excel",BCA,"Web Dev, Design",Mumbai
+35,Meera,"scrum, agile, project management",BA English,"Sales, Consulting",Chennai
+36,Aarav,"sales, public speaking",BSc Maths,"Cloud, Big Data",Mumbai
+37,Meera,"seo, social media",BCA,"Marketing, PR",Delhi
+38,Rohan,"illustrator, photoshop",M.Tech,"Sales, Consulting",Ahmedabad
+39,Sakshi,"cloud, database",BCA,"Cloud, Big Data",Kolkata
+40,Meera,"project management, agile",BCA,"Coding, CP",Bangalore
+41,Amit,"cloud, database",BSc IT,"Design, Branding",Jaipur
+42,Kabir,"database, cloud, sql",BCA,"Sales, Consulting",Bangalore
+43,Rohan,"finance, accounting, excel",B.Tech CSE,"Marketing, PR",Kolkata
+44,Karan,"sales, negotiation",MBA,"Design, Branding",Mumbai
+45,Priya,"agile, project management, scrum",B.Tech CSE,"Marketing, PR",Pune
+46,Aarav,"scrum, project management, agile",BA English,"Coding, CP",Delhi
+47,Nikhil,"javascript, html",BA English,"AI, Analytics",Kolkata
+48,Arjun,"html, react, javascript",BBA,"Cloud, Big Data",Noida
+49,Vikas,"excel, finance",BCom,"Design, Branding",Noida
+50,Neha,"java, microservices, spring",BCom,"Marketing, PR",Kolkata
+51,Pooja,"cloud, database, sql",BA English,"Cloud, Big Data",Ahmedabad
+52,Pooja,"illustrator, graphic design, photoshop",BDes,"Finance, Markets",Bangalore
+53,Ritu,"java, spring",BSc Maths,"AI, Analytics",Jaipur
+54,Priya,"finance, accounting",B.Tech CSE,"Database, Security",Chennai
+55,Sakshi,"finance, accounting, excel",BSc IT,"Web Dev, Design",Pune
+56,Amit,"java, spring",BCA,"Cloud, Big Data",Ahmedabad
+57,Neha,"finance, excel",BCom,"Sales, Consulting",Chennai
+58,Rohan,"sql, cloud",BSc Maths,"AI, Analytics",Delhi
+59,Simran,"agile, project management, scrum",BA English,"Cloud, Big Data",Kolkata
+60,Simran,"data analysis, python",BBA,"Finance, Markets",Ahmedabad
+61,Mona,"algorithms, data structures, c++",BA English,"Cloud, Big Data",Mumbai
+62,Amit,"data analysis, statistics, python",BCom,"Coding, CP",Mumbai
+63,Ankit,"illustrator, photoshop",BCA,"Database, Security",Noida
+64,Sakshi,"project management, scrum, agile",BBA,"Finance, Markets",Noida
+65,Karan,"c++, data structures",BSc IT,"Coding, CP",Jaipur
+66,Aisha,"graphic design, illustrator",BA English,"Database, Security",Delhi
+67,Karan,"illustrator, graphic design, photoshop",BDes,"Coding, CP",Noida
+68,Karan,"data structures, algorithms",BCA,"Sales, Consulting",Bangalore
+69,Aarav,"cloud, database, sql",BCom,"Marketing, PR",Noida
+70,Amit,"html, javascript, css",M.Tech,"Finance, Markets",Hyderabad
+71,Aarav,"sales, public speaking, negotiation",BDes,"Mgmt, Leadership",Hyderabad
+72,Aarav,"java, spring",BBA,"AI, Analytics",Mumbai
+73,Meera,"scrum, agile",B.Tech CSE,"Sales, Consulting",Hyderabad
+74,Vikas,"accounting, excel, finance",M.Tech,"Finance, Markets",Bangalore
+75,Karan,"java, microservices",B.Tech CSE,"AI, Analytics",Hyderabad
+76,Sakshi,"illustrator, photoshop",M.Tech,"Mgmt, Leadership",Pune
+77,Sakshi,"photoshop, graphic design",BCom,"Finance, Markets",Kolkata
+78,Vikas,"statistics, python, data analysis",BCom,"Finance, Markets",Ahmedabad
+79,Ankit,"negotiation, sales",BSc IT,"Coding, CP",Pune
+80,Neha,"negotiation, sales",BCA,"Database, Security",Bangalore
+81,Mona,"public speaking, negotiation, sales",M.Tech,"Finance, Markets",Pune
+82,Aisha,"agile, project management, scrum",MBA,"Cloud, Big Data",Ahmedabad
+83,Karan,"negotiation, public speaking",B.Tech CSE,"Mgmt, Leadership",Ahmedabad
+84,Meera,"data structures, c++, algorithms",M.Tech,"AI, Analytics",Chennai
+85,Nikhil,"content, social media, seo",BA English,"Web Dev, Design",Noida
+86,Simran,"graphic design, illustrator, photoshop",BDes,"Web Dev, Design",Pune
+87,Meera,"data structures, algorithms",BCom,"Design, Branding",Kolkata
+88,Simran,"sql, database",BBA,"Marketing, PR",Kolkata
+89,Pooja,"graphic design, photoshop",M.Tech,"Mgmt, Leadership",Jaipur
+90,Arjun,"agile, scrum",BDes,"Coding, CP",Bangalore
+91,Arjun,"python, statistics",BA English,"Cloud, Big Data",Delhi
+92,Nikhil,"social media, content, seo",MBA,"Cloud, Big Data",Noida
+93,Neha,"photoshop, graphic design, illustrator",M.Tech,"Mgmt, Leadership",Delhi
+94,Karan,"react, html, css",MBA,"Coding, CP",Hyderabad
+95,Rohan,"spring, microservices",BDes,"Cloud, Big Data",Hyderabad
+96,Ritu,"spring, microservices, java",BCom,"Database, Security",Mumbai
+97,Sakshi,"accounting, finance",BCom,"Cloud, Big Data",Noida
+98,Sneha,"data analysis, python",BBA,"Sales, Consulting",Mumbai
+99,Ankit,"content, seo",BA English,"Mgmt, Leadership",Mumbai
+100,Meera,"sql, cloud, database",MBA,"AI, Analytics",Noida
+101,Ritu,"excel, accounting",M.Tech,"Database, Security",Jaipur
+102,Amit,"excel, accounting",M.Tech,"Web Dev, Design",Chennai
+103,Rahul,"cloud, database",BDes,"Mgmt, Leadership",Noida
+104,Amit,"illustrator, graphic design",MBA,"Sales, Consulting",Bangalore
+105,Aarav,"photoshop, illustrator",BCA,"Mgmt, Leadership",Delhi
+106,Sneha,"sql, database",BCA,"Database, Security",Chennai
+107,Arjun,"spring, microservices, java",BSc IT,"Web Dev, Design",Jaipur
+108,Mona,"social media, seo",BCA,"Finance, Markets",Noida
+109,Mona,"negotiation, sales",MBA,"Finance, Markets",Delhi
+110,Aarav,"css, react, javascript",M.Tech,"Marketing, PR",Noida
+111,Sneha,"sales, negotiation, public speaking",BA English,"Sales, Consulting",Kolkata
+112,Mona,"database, cloud",BBA,"Database, Security",Jaipur
+113,Mona,"sales, negotiation, public speaking",BA English,"Database, Security",Hyderabad
+114,Karan,"accounting, excel",BBA,"AI, Analytics",Jaipur
+115,Simran,"javascript, css",BSc IT,"Finance, Markets",Chennai
+116,Ankit,"data structures, algorithms",BCA,"Web Dev, Design",Bangalore
+117,Mona,"illustrator, photoshop, graphic design",MBA,"Mgmt, Leadership",Jaipur
+118,Aarav,"data structures, algorithms, c++",BCom,"AI, Analytics",Mumbai
+119,Priya,"html, javascript",M.Tech,"Design, Branding",Ahmedabad
+120,Ritu,"photoshop, graphic design, illustrator",MBA,"AI, Analytics",Bangalore
+121,Meera,"data structures, algorithms",M.Tech,"Sales, Consulting",Chennai
+122,Simran,"content, social media, seo",BCA,"Sales, Consulting",Chennai
+123,Ankit,"negotiation, sales",BCA,"Design, Branding",Ahmedabad
+124,Arjun,"illustrator, photoshop",B.Tech CSE,"Sales, Consulting",Chennai
+125,Rahul,"public speaking, sales, negotiation",B.Tech CSE,"Database, Security",Delhi
+126,Ritu,"agile, project management, scrum",M.Tech,"Marketing, PR",Chennai
+127,Kabir,"statistics, data analysis",BSc IT,"Coding, CP",Noida
+128,Rahul,"agile, scrum, project management",BSc Maths,"Web Dev, Design",Jaipur
+129,Arjun,"data structures, algorithms, c++",BSc IT,"AI, Analytics",Pune
+130,Arjun,"sales, public speaking",BCA,"Finance, Markets",Pune
+131,Pooja,"java, microservices, spring",BCom,"AI, Analytics",Jaipur
+132,Rohan,"css, javascript",BDes,"AI, Analytics",Pune
+133,Sneha,"javascript, react, html",BCA,"Cloud, Big Data",Jaipur
+134,Nikhil,"data analysis, statistics, python",B.Tech CSE,"Sales, Consulting",Pune
+135,Simran,"content, social media",BSc IT,"Design, Branding",Kolkata
+136,Nikhil,"database, cloud, sql",BBA,"Coding, CP",Mumbai
+137,Nikhil,"database, sql",BCom,"AI, Analytics",Hyderabad
+138,Meera,"illustrator, photoshop",BA English,"Finance, Markets",Bangalore
+139,Sneha,"graphic design, illustrator, photoshop",M.Tech,"Cloud, Big Data",Ahmedabad
+140,Karan,"sql, cloud, database",MBA,"Database, Security",Pune
+141,Neha,"sales, negotiation, public speaking",BDes,"Mgmt, Leadership",Hyderabad
+142,Priya,"negotiation, public speaking",BDes,"Sales, Consulting",Hyderabad
+143,Priya,"database, sql, cloud",BSc Maths,"Finance, Markets",Chennai
+144,Kabir,"graphic design, photoshop, illustrator",MBA,"Mgmt, Leadership",Mumbai
+145,Kabir,"c++, data structures, algorithms",BA English,"AI, Analytics",Kolkata
+146,Aarav,"data structures, c++",BSc IT,"Design, Branding",Bangalore
+147,Priya,"photoshop, illustrator, graphic design",MBA,"Marketing, PR",Pune
+148,Ankit,"c++, algorithms, data structures",BSc IT,"Marketing, PR",Chennai
+149,Neha,"excel, accounting, finance",BBA,"Mgmt, Leadership",Mumbai
+150,Ankit,"react, css, javascript",BCom,"Cloud, Big Data",Kolkata
+151,Pooja,"social media, content",BCom,"Design, Branding",Ahmedabad
+152,Amit,"negotiation, sales",MBA,"Sales, Consulting",Kolkata
+153,Karan,"c++, algorithms, data structures",BCom,"Sales, Consulting",Mumbai
+154,Rahul,"python, data analysis",BCA,"Finance, Markets",Hyderabad
+155,Sakshi,"illustrator, photoshop",M.Tech,"Sales, Consulting",Kolkata
+156,Nikhil,"content, social media",MBA,"Finance, Markets",Jaipur
+157,Ritu,"microservices, spring",BDes,"Web Dev, Design",Delhi
+158,Simran,"css, javascript",B.Tech CSE,"Design, Branding",Mumbai
+159,Kabir,"spring, java",BA English,"Finance, Markets",Pune
+160,Priya,"illustrator, photoshop",M.Tech,"Sales, Consulting",Mumbai
+161,Sakshi,"content, social media, seo",BBA,"Cloud, Big Data",Pune
+162,Pooja,"social media, seo, content",BDes,"Coding, CP",Noida
+163,Ritu,"c++, data structures, algorithms",M.Tech,"Coding, CP",Bangalore
+164,Karan,"html, react, javascript",BBA,"Design, Branding",Bangalore
+165,Amit,"graphic design, illustrator",BA English,"Design, Branding",Mumbai
+166,Arjun,"accounting, excel",MBA,"Cloud, Big Data",Kolkata
+167,Karan,"sql, database",BA English,"Mgmt, Leadership",Mumbai
+168,Karan,"scrum, agile, project management",BSc Maths,"Design, Branding",Delhi
+169,Pooja,"sql, cloud",BA English,"Cloud, Big Data",Delhi
+170,Rahul,"photoshop, illustrator, graphic design",BDes,"Design, Branding",Pune
+171,Priya,"react, css",M.Tech,"Marketing, PR",Hyderabad
+172,Amit,"seo, social media",B.Tech CSE,"Web Dev, Design",Mumbai
+173,Rohan,"negotiation, sales",BSc IT,"Database, Security",Noida
+174,Simran,"public speaking, sales",MBA,"Web Dev, Design",Bangalore
+175,Rohan,"negotiation, public speaking, sales",BCA,"Design, Branding",Kolkata
+176,Aarav,"database, cloud",BCA,"Mgmt, Leadership",Pune
+177,Arjun,"microservices, java, spring",BDes,"Marketing, PR",Mumbai
+178,Rahul,"graphic design, photoshop, illustrator",BSc Maths,"Finance, Markets",Pune
+179,Neha,"statistics, python",BSc Maths,"Mgmt, Leadership",Jaipur
+180,Simran,"data structures, c++",BCom,"Web Dev, Design",Hyderabad
+181,Mona,"sql, database",BCA,"Mgmt, Leadership",Noida
+182,Aarav,"excel, accounting, finance",BCom,"Coding, CP",Hyderabad
+183,Meera,"agile, project management, scrum",BA English,"Database, Security",Pune
+184,Ritu,"c++, algorithms, data structures",B.Tech CSE,"Design, Branding",Delhi
+185,Rohan,"spring, microservices",BCA,"Coding, CP",Hyderabad
+186,Rohan,"algorithms, data structures",BBA,"Mgmt, Leadership",Noida
+187,Ankit,"accounting, excel, finance",BDes,"Mgmt, Leadership",Hyderabad
+188,Amit,"finance, excel, accounting",BA English,"Coding, CP",Kolkata
+189,Rahul,"css, html, javascript",BDes,"Web Dev, Design",Hyderabad
+190,Vikas,"agile, project management",BA English,"Database, Security",Chennai
+191,Priya,"graphic design, illustrator",BCA,"Cloud, Big Data",Ahmedabad
+192,Nikhil,"microservices, java, spring",BDes,"Database, Security",Pune
+193,Rahul,"project management, scrum, agile",BDes,"Marketing, PR",Pune
+194,Rohan,"seo, social media",BSc Maths,"Coding, CP",Bangalore
+195,Meera,"html, react, css",M.Tech,"Design, Branding",Delhi
+196,Aisha,"react, javascript",BSc Maths,"AI, Analytics",Delhi
+197,Ankit,"microservices, spring",BSc Maths,"Finance, Markets",Delhi
+198,Priya,"java, spring",BDes,"Cloud, Big Data",Kolkata
+199,Aisha,"algorithms, data structures, c++",BSc IT,"Design, Branding",Bangalore
+200,Ankit,"database, sql",BSc Maths,"Sales, Consulting",Delhi
+201,Neha,"cloud, database",MBA,"AI, Analytics",Bangalore
+202,Ritu,"negotiation, public speaking",BBA,"Cloud, Big Data",Kolkata
+203,Rohan,"react, javascript",BCom,"Database, Security",Pune
+204,Mona,"graphic design, photoshop, illustrator",BSc Maths,"Mgmt, Leadership",Bangalore
+205,Meera,"statistics, python, data analysis",B.Tech CSE,"Mgmt, Leadership",Ahmedabad
+206,Sneha,"agile, project management, scrum",BSc IT,"Coding, CP",Jaipur
+207,Ankit,"illustrator, graphic design, photoshop",M.Tech,"Sales, Consulting",Bangalore
+208,Arjun,"html, javascript, react",M.Tech,"Sales, Consulting",Pune
+209,Neha,"c++, algorithms, data structures",BDes,"AI, Analytics",Ahmedabad
+210,Sakshi,"react, javascript, html",BBA,"Marketing, PR",Chennai
+211,Neha,"illustrator, graphic design, photoshop",BA English,"Coding, CP",Bangalore
+212,Priya,"java, microservices",BA English,"Web Dev, Design",Mumbai
+213,Karan,"python, statistics",BCA,"Cloud, Big Data",Chennai
+214,Aisha,"javascript, html, css",M.Tech,"Finance, Markets",Noida
+215,Simran,"content, seo",BBA,"Sales, Consulting",Pune
+216,Mona,"content, seo, social media",BA English,"Finance, Markets",Ahmedabad
+217,Ritu,"database, cloud",BBA,"Design, Branding",Noida
+218,Sakshi,"graphic design, illustrator, photoshop",MBA,"Web Dev, Design",Pune
+219,Aarav,"javascript, html",BCom,"Mgmt, Leadership",Noida
+220,Ritu,"illustrator, graphic design, photoshop",MBA,"Finance, Markets",Pune
+221,Pooja,"graphic design, photoshop, illustrator",BCA,"Web Dev, Design",Jaipur
+222,Karan,"content, social media, seo",BA English,"Finance, Markets",Delhi
+223,Pooja,"css, javascript",BSc IT,"Mgmt, Leadership",Mumbai
+224,Karan,"data analysis, python",B.Tech CSE,"Database, Security",Delhi
+225,Neha,"javascript, html, css",BBA,"AI, Analytics",Chennai
+226,Sakshi,"illustrator, photoshop, graphic design",M.Tech,"Finance, Markets",Mumbai
+227,Ritu,"sql, database, cloud",M.Tech,"Marketing, PR",Chennai
+228,Pooja,"excel, accounting, finance",BCom,"Database, Security",Mumbai
+229,Neha,"c++, algorithms",BCom,"AI, Analytics",Ahmedabad
+230,Rohan,"graphic design, photoshop",M.Tech,"Cloud, Big Data",Ahmedabad
+231,Aarav,"algorithms, data structures",BSc IT,"Marketing, PR",Mumbai
+232,Aisha,"data analysis, python, statistics",BSc Maths,"Finance, Markets",Mumbai
+233,Amit,"react, html, css",M.Tech,"Coding, CP",Pune
+234,Rohan,"statistics, python",B.Tech CSE,"Marketing, PR",Noida
+235,Vikas,"scrum, agile",MBA,"Web Dev, Design",Jaipur
+236,Arjun,"agile, project management",BDes,"Cloud, Big Data",Pune
+237,Meera,"photoshop, graphic design",BCom,"Finance, Markets",Pune
+238,Ankit,"excel, accounting, finance",B.Tech CSE,"Web Dev, Design",Kolkata
+239,Aisha,"illustrator, photoshop",BCom,"Database, Security",Jaipur
+240,Arjun,"seo, social media",BCom,"AI, Analytics",Bangalore
+241,Arjun,"java, microservices",BDes,"Marketing, PR",Chennai
+242,Ritu,"agile, scrum",BCom,"Marketing, PR",Jaipur
+243,Nikhil,"illustrator, graphic design, photoshop",BBA,"Cloud, Big Data",Delhi
+244,Sneha,"statistics, python",BDes,"AI, Analytics",Hyderabad
+245,Priya,"html, css",BDes,"Marketing, PR",Pune
+246,Priya,"graphic design, photoshop, illustrator",BDes,"Mgmt, Leadership",Jaipur
+247,Mona,"excel, accounting, finance",BSc IT,"Cloud, Big Data",Mumbai
+248,Mona,"java, microservices",BCA,"Finance, Markets",Kolkata
+249,Sakshi,"sql, cloud, database",MBA,"Coding, CP",Kolkata
+250,Kabir,"javascript, react",BCom,"Coding, CP",Noida
+251,Ankit,"database, cloud",BCom,"Database, Security",Hyderabad
+252,Pooja,"photoshop, illustrator",BA English,"Web Dev, Design",Bangalore
+253,Sneha,"finance, accounting",BCA,"AI, Analytics",Kolkata
+254,Nikhil,"scrum, agile, project management",BSc IT,"Design, Branding",Hyderabad
+255,Nikhil,"scrum, agile",BSc Maths,"AI, Analytics",Delhi
+256,Priya,"finance, excel, accounting",BSc IT,"AI, Analytics",Jaipur
+257,Priya,"scrum, project management, agile",BCA,"Design, Branding",Pune
+258,Vikas,"cloud, sql, database",BSc Maths,"Mgmt, Leadership",Jaipur
+259,Nikhil,"css, html, react",BSc Maths,"Design, Branding",Delhi
+260,Rohan,"project management, agile",BSc Maths,"Marketing, PR",Mumbai
+261,Ankit,"react, javascript, css",B.Tech CSE,"Coding, CP",Kolkata
+262,Amit,"content, social media",BCom,"Coding, CP",Mumbai
+263,Priya,"sales, public speaking",M.Tech,"Cloud, Big Data",Chennai
+264,Vikas,"graphic design, photoshop, illustrator",M.Tech,"Cloud, Big Data",Ahmedabad
+265,Pooja,"accounting, excel, finance",BDes,"Mgmt, Leadership",Mumbai
+266,Ritu,"public speaking, negotiation",BSc IT,"Finance, Markets",Kolkata
+267,Neha,"project management, scrum",BBA,"Coding, CP",Pune
+268,Aarav,"graphic design, illustrator, photoshop",BA English,"Finance, Markets",Ahmedabad
+269,Neha,"excel, finance, accounting",BBA,"Sales, Consulting",Chennai
+270,Sakshi,"excel, finance",B.Tech CSE,"Finance, Markets",Bangalore
+271,Vikas,"photoshop, graphic design, illustrator",BBA,"AI, Analytics",Pune
+272,Sakshi,"negotiation, sales",BCom,"Marketing, PR",Noida
+273,Priya,"graphic design, photoshop, illustrator",BDes,"Web Dev, Design",Pune
+274,Ritu,"finance, excel, accounting",MBA,"Coding, CP",Noida
+275,Simran,"html, react",MBA,"Finance, Markets",Kolkata
+276,Aisha,"python, statistics, data analysis",BCom,"Mgmt, Leadership",Kolkata
+277,Sneha,"excel, finance, accounting",BDes,"Coding, CP",Delhi
+278,Priya,"project management, agile, scrum",M.Tech,"AI, Analytics",Noida
+279,Aarav,"java, microservices, spring",BSc Maths,"Database, Security",Jaipur
+280,Ritu,"database, cloud",B.Tech CSE,"Sales, Consulting",Jaipur
+281,Nikhil,"accounting, finance",BCA,"Coding, CP",Pune
+282,Pooja,"algorithms, c++, data structures",BCA,"Cloud, Big Data",Noida
+283,Karan,"cloud, database, sql",BSc Maths,"Mgmt, Leadership",Delhi
+284,Aisha,"statistics, python, data analysis",BA English,"Design, Branding",Chennai
+285,Simran,"data analysis, statistics",BCom,"Cloud, Big Data",Hyderabad
+286,Priya,"scrum, project management",B.Tech CSE,"Mgmt, Leadership",Hyderabad
+287,Priya,"data analysis, python",BSc Maths,"Database, Security",Hyderabad
+288,Pooja,"microservices, spring",BDes,"AI, Analytics",Ahmedabad
+289,Meera,"spring, microservices",BCom,"Sales, Consulting",Jaipur
+290,Amit,"accounting, excel, finance",BSc IT,"Marketing, PR",Ahmedabad
+291,Pooja,"html, javascript, react",B.Tech CSE,"Database, Security",Pune
+292,Sakshi,"agile, scrum",M.Tech,"Cloud, Big Data",Kolkata
+293,Rahul,"c++, data structures, algorithms",BA English,"Web Dev, Design",Pune
+294,Nikhil,"data structures, algorithms, c++",MBA,"Marketing, PR",Jaipur
+295,Priya,"javascript, react, css",BDes,"Mgmt, Leadership",Mumbai
+296,Rahul,"python, statistics",BA English,"Web Dev, Design",Delhi
+297,Ankit,"scrum, agile",BSc IT,"Cloud, Big Data",Mumbai
+298,Aisha,"c++, data structures, algorithms",BA English,"Design, Branding",Bangalore
+299,Priya,"python, data analysis",M.Tech,"AI, Analytics",Bangalore
+300,Nikhil,"data analysis, statistics, python",MBA,"Web Dev, Design",Noida
+301,Sakshi,"c++, data structures",BA English,"Design, Branding",Pune
+302,Sneha,"public speaking, negotiation, sales",BSc IT,"Web Dev, Design",Ahmedabad
+303,Ankit,"statistics, python, data analysis",BDes,"Cloud, Big Data",Kolkata
+304,Nikhil,"spring, microservices, java",M.Tech,"Marketing, PR",Kolkata
+305,Ritu,"accounting, excel",BSc IT,"Marketing, PR",Chennai
+306,Karan,"content, social media, seo",BDes,"AI, Analytics",Delhi
+307,Amit,"seo, social media, content",BSc IT,"Design, Branding",Delhi
+308,Nikhil,"react, html, css",B.Tech CSE,"Design, Branding",Hyderabad
+309,Rohan,"sales, public speaking, negotiation",BSc IT,"Finance, Markets",Pune
+310,Sakshi,"java, spring",BSc Maths,"Finance, Markets",Pune
+311,Simran,"algorithms, c++, data structures",BA English,"Web Dev, Design",Delhi
+312,Vikas,"spring, java",BBA,"Sales, Consulting",Jaipur
+313,Aisha,"excel, accounting, finance",M.Tech,"AI, Analytics",Delhi
+314,Kabir,"scrum, project management, agile",BCA,"Web Dev, Design",Jaipur
+315,Vikas,"project management, scrum, agile",BA English,"Coding, CP",Kolkata
+316,Karan,"python, data analysis, statistics",BDes,"Cloud, Big Data",Noida
+317,Kabir,"agile, scrum, project management",MBA,"Cloud, Big Data",Pune
+318,Pooja,"illustrator, graphic design, photoshop",BDes,"Sales, Consulting",Delhi
+319,Ankit,"agile, project management, scrum",BA English,"Coding, CP",Kolkata
+320,Simran,"negotiation, sales, public speaking",BCom,"Design, Branding",Jaipur
+321,Karan,"cloud, sql",MBA,"Finance, Markets",Bangalore
+322,Rahul,"microservices, spring",MBA,"Finance, Markets",Delhi
+323,Sneha,"finance, accounting",BA English,"Coding, CP",Delhi
+324,Vikas,"sql, cloud, database",M.Tech,"Web Dev, Design",Chennai
+325,Rohan,"python, data analysis, statistics",BSc IT,"Mgmt, Leadership",Hyderabad
+326,Aarav,"microservices, spring",MBA,"Mgmt, Leadership",Hyderabad
+327,Ankit,"data structures, c++, algorithms",M.Tech,"Web Dev, Design",Bangalore
+328,Neha,"public speaking, negotiation, sales",BA English,"Marketing, PR",Mumbai
+329,Priya,"data analysis, python, statistics",BCom,"Web Dev, Design",Delhi
+330,Kabir,"data analysis, python, statistics",BSc Maths,"Coding, CP",Ahmedabad
+331,Priya,"sales, public speaking",BCom,"Sales, Consulting",Delhi
+332,Meera,"c++, data structures, algorithms",B.Tech CSE,"Design, Branding",Mumbai
+333,Vikas,"public speaking, negotiation",M.Tech,"Web Dev, Design",Delhi
+334,Mona,"public speaking, sales",BBA,"Coding, CP",Noida
+335,Sakshi,"social media, seo, content",BCom,"Marketing, PR",Delhi
+336,Vikas,"css, javascript, html",B.Tech CSE,"Marketing, PR",Ahmedabad
+337,Ritu,"sql, database, cloud",B.Tech CSE,"Marketing, PR",Mumbai
+338,Mona,"excel, accounting",M.Tech,"Finance, Markets",Bangalore
+339,Amit,"scrum, agile",MBA,"Coding, CP",Bangalore
+340,Aarav,"graphic design, illustrator, photoshop",BSc Maths,"Mgmt, Leadership",Hyderabad
+341,Simran,"illustrator, photoshop, graphic design",BDes,"Design, Branding",Noida
+342,Pooja,"algorithms, data structures",BCom,"Sales, Consulting",Bangalore
+343,Rahul,"accounting, excel, finance",BSc IT,"AI, Analytics",Noida
+344,Aisha,"react, html",BBA,"Mgmt, Leadership",Kolkata
+345,Neha,"data analysis, python, statistics",BSc Maths,"Design, Branding",Jaipur
+346,Ankit,"seo, content, social media",MBA,"Finance, Markets",Jaipur
+347,Sneha,"accounting, finance, excel",B.Tech CSE,"Web Dev, Design",Delhi
+348,Rahul,"css, html, javascript",BSc Maths,"Coding, CP",Hyderabad
+349,Aisha,"scrum, agile",BA English,"Design, Branding",Kolkata
+350,Pooja,"social media, seo",BSc Maths,"Marketing, PR",Delhi
+351,Meera,"graphic design, photoshop",BA English,"Finance, Markets",Noida
+352,Simran,"microservices, java",BBA,"Design, Branding",Mumbai
+353,Vikas,"agile, scrum, project management",BBA,"Database, Security",Noida
+354,Pooja,"cloud, sql, database",BCom,"Design, Branding",Noida
+355,Priya,"c++, data structures",BSc Maths,"Cloud, Big Data",Noida
+356,Neha,"spring, java, microservices",MBA,"Mgmt, Leadership",Ahmedabad
+357,Karan,"algorithms, data structures",BSc Maths,"Marketing, PR",Pune
+358,Vikas,"graphic design, photoshop, illustrator",M.Tech,"AI, Analytics",Delhi
+359,Kabir,"cloud, sql, database",MBA,"Mgmt, Leadership",Kolkata
+360,Karan,"project management, agile",BCA,"Mgmt, Leadership",Chennai
+361,Pooja,"project management, scrum, agile",B.Tech CSE,"Database, Security",Noida
+362,Ritu,"microservices, java, spring",MBA,"Sales, Consulting",Hyderabad
+363,Ankit,"negotiation, sales, public speaking",BSc Maths,"Database, Security",Noida
+364,Ritu,"excel, accounting",BDes,"Sales, Consulting",Bangalore
+365,Karan,"content, social media, seo",BA English,"AI, Analytics",Noida
+366,Meera,"data analysis, statistics",BSc IT,"Marketing, PR",Mumbai
+367,Aarav,"illustrator, graphic design, photoshop",BA English,"Web Dev, Design",Kolkata
+368,Mona,"content, seo, social media",BCom,"Finance, Markets",Hyderabad
+369,Sneha,"react, html",MBA,"Mgmt, Leadership",Noida
+370,Meera,"data structures, algorithms",B.Tech CSE,"Web Dev, Design",Noida
+371,Aisha,"javascript, react",BBA,"Web Dev, Design",Delhi
+372,Rahul,"algorithms, data structures, c++",BSc Maths,"Design, Branding",Jaipur
+373,Arjun,"spring, java",BSc IT,"Sales, Consulting",Pune
+374,Rahul,"social media, seo",BDes,"Database, Security",Noida
+375,Ritu,"java, microservices",BCom,"Mgmt, Leadership",Hyderabad
+376,Sneha,"database, cloud, sql",BSc Maths,"Design, Branding",Delhi
+377,Neha,"project management, scrum, agile",BSc IT,"Design, Branding",Pune
+378,Meera,"graphic design, illustrator, photoshop",B.Tech CSE,"Design, Branding",Kolkata
+379,Ankit,"statistics, data analysis",B.Tech CSE,"Web Dev, Design",Delhi
+380,Sakshi,"c++, algorithms",BSc IT,"Web Dev, Design",Kolkata
+381,Simran,"agile, scrum",BSc IT,"Finance, Markets",Chennai
+382,Aarav,"javascript, html",B.Tech CSE,"Web Dev, Design",Jaipur
+383,Ankit,"graphic design, illustrator, photoshop",BSc IT,"Web Dev, Design",Hyderabad
+384,Amit,"algorithms, c++, data structures",BA English,"Mgmt, Leadership",Pune
+385,Kabir,"javascript, html",BCom,"Sales, Consulting",Mumbai
+386,Rohan,"java, spring",BCA,"Cloud, Big Data",Noida
+387,Meera,"excel, accounting",BA English,"Database, Security",Delhi
+388,Simran,"photoshop, graphic design",BSc IT,"Mgmt, Leadership",Delhi
+389,Sneha,"python, statistics, data analysis",BBA,"Cloud, Big Data",Bangalore
+390,Sakshi,"negotiation, public speaking, sales",BSc IT,"Mgmt, Leadership",Ahmedabad
+391,Kabir,"c++, data structures, algorithms",BA English,"AI, Analytics",Noida
+392,Sakshi,"scrum, agile, project management",BBA,"Coding, CP",Hyderabad
+393,Pooja,"content, seo, social media",BDes,"Marketing, PR",Bangalore
+394,Vikas,"scrum, project management, agile",MBA,"AI, Analytics",Mumbai
+395,Arjun,"cloud, sql, database",BA English,"Sales, Consulting",Noida
+396,Arjun,"database, sql, cloud",BDes,"Web Dev, Design",Ahmedabad
+397,Meera,"sql, database",BBA,"Cloud, Big Data",Hyderabad
+398,Sneha,"accounting, finance",M.Tech,"Cloud, Big Data",Ahmedabad
+399,Sakshi,"negotiation, public speaking, sales",BCA,"Sales, Consulting",Kolkata
+400,Ankit,"css, react, javascript",BDes,"Coding, CP",Bangalore

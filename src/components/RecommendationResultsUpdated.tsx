@@ -174,6 +174,7 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
             </div>
         );
     }
+
     return (
         <div className="min-h-screen bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 pt-24 pb-16 px-4">
             <div className="container mx-auto max-w-7xl">
@@ -211,7 +212,9 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             className="inline-flex items-center gap-2 bg-white/60 backdrop-blur-md rounded-full px-6 py-3 mb-6 border border-white/30 shadow-lg"
                         >
                             <Target className="w-4 h-4 text-green-600" />
-                            <span className="text-slate-700 text-sm font-medium">Personalized for You</span>
+                            <span className="text-slate-700 text-sm font-medium">
+                                {error ? "Sample Data" : "Personalized for You"}
+                            </span>
                         </motion.div>
 
                         <motion.h1
@@ -232,14 +235,17 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                             transition={{ delay: 0.4, duration: 0.6 }}
                             className="text-lg text-slate-600 max-w-2xl mx-auto"
                         >
-                            We found {mockInternships.length} amazing internship opportunities tailored to your profile and interests
+                            {error
+                                ? `Showing ${recommendations.length} sample internship opportunities (API connection failed)`
+                                : `We found ${recommendations.length} amazing internship opportunities tailored to your profile and interests`
+                            }
                         </motion.p>
                     </div>
                 </motion.div>
 
                 {/* Internship Cards Grid */}
                 <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
-                    {mockInternships.map((internship, index) => (
+                    {recommendations.map((internship, index) => (
                         <motion.div
                             key={internship.id}
                             initial={{ opacity: 0, y: 40 }}
@@ -251,15 +257,15 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-center gap-3">
                                             <div className="w-14 h-14 bg-gradient-to-br from-sky-100 to-blue-100 rounded-2xl flex items-center justify-center text-2xl shadow-md">
-                                                {internship.logo}
+                                                💼
                                             </div>
-                                            <div>
+                                            <div className="flex-1">
                                                 <CardTitle className="text-lg font-semibold text-slate-800 group-hover:text-sky-700 transition-colors">
                                                     {internship.title}
                                                 </CardTitle>
                                                 <p className="text-sm text-slate-600 flex items-center gap-1">
                                                     <Building2 className="w-3 h-3" />
-                                                    {internship.company}
+                                                    {internship.sector}
                                                 </p>
                                             </div>
                                         </div>
@@ -273,14 +279,9 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                                                 <Heart className="w-4 h-4" />
                                             </Button>
                                             <Badge
-                                                className={`text-xs font-medium px-3 py-1 rounded-full ${internship.matchScore >= 90
-                                                        ? 'bg-green-100 text-green-700'
-                                                        : internship.matchScore >= 80
-                                                            ? 'bg-blue-100 text-blue-700'
-                                                            : 'bg-amber-100 text-amber-700'
-                                                    }`}
+                                                className={getRelevanceColor(internship.relevance)}
                                             >
-                                                {internship.matchScore}% Match
+                                                {getMatchPercentage(internship.score)}% Match
                                             </Badge>
                                         </div>
                                     </div>
@@ -288,7 +289,7 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
 
                                 <CardContent className="pt-0 flex-1 flex flex-col">
                                     <p className="text-slate-600 text-sm mb-4 line-clamp-2 flex-1">
-                                        {internship.description}
+                                        {internship.reason}
                                     </p>
 
                                     {/* Key Info */}
@@ -299,38 +300,31 @@ export const RecommendationResults = ({ userData, onBack, onStartOver }: Recomme
                                         </div>
 
                                         <div className="flex items-center gap-2 text-sm text-slate-600">
-                                            <IndianRupee className="w-4 h-4 text-green-500" />
-                                            <span className="font-medium text-green-700">{internship.stipend}</span>
+                                            <GraduationCap className="w-4 h-4 text-green-500" />
+                                            <span className="font-medium text-green-700">{internship.eligibility}</span>
                                             <Badge variant="outline" className="text-xs ml-2">
-                                                {internship.type}
+                                                {internship.relevance} Match
                                             </Badge>
-                                        </div>
-
-                                        <div className="flex items-center gap-2 text-sm text-slate-600">
-                                            <Calendar className="w-4 h-4 text-slate-400" />
-                                            <span>{internship.duration}</span>
-                                            <Clock className="w-4 h-4 text-slate-400 ml-2" />
-                                            <span>{internship.level}</span>
                                         </div>
 
                                         <div className="flex items-center gap-2 text-sm">
                                             <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                                            <span className="text-slate-700 font-medium">{internship.rating}</span>
+                                            <span className="text-slate-700 font-medium">{(internship.score * 5).toFixed(1)}</span>
                                             <span className="text-slate-500">•</span>
                                             <Users className="w-4 h-4 text-slate-400" />
-                                            <span className="text-slate-600">{internship.applicants} applied</span>
+                                            <span className="text-slate-600">Match Score</span>
                                         </div>
                                     </div>
 
                                     {/* Skills Tags */}
                                     <div className="flex flex-wrap gap-2 mb-6">
-                                        {internship.skills.slice(0, 3).map((skill) => (
+                                        {internship.skills_required.split(',').slice(0, 3).map((skill, idx) => (
                                             <Badge
-                                                key={skill}
+                                                key={idx}
                                                 variant="secondary"
                                                 className="text-xs bg-sky-100 text-sky-700 hover:bg-sky-200"
                                             >
-                                                {skill}
+                                                {skill.trim()}
                                             </Badge>
                                         ))}
                                     </div>

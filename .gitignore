@@ -12,6 +12,18 @@ dist
 dist-ssr
 *.local
 
+# Ignore Python virtual environments
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore other unnecessary files
+*.egg-info/
+dist/
+build/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
